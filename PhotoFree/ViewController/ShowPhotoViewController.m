@@ -27,7 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor blackColor];
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     flowLayout.minimumInteritemSpacing = 0;
     flowLayout.minimumLineSpacing = 0;
@@ -41,19 +41,13 @@
     _collectionView.scrollsToTop = NO;
     UINib *cellNib = [UINib nibWithNibName:@"PhotoCollectionViewCell" bundle:nil];
     [_collectionView registerNib:cellNib forCellWithReuseIdentifier:@"CollectionViewCell"];
-    _collectionView.backgroundColor = [UIColor whiteColor];
-//    _collectionView.maximumZoomScale = 2.0;
-//    _collectionView.minimumZoomScale = 0.5;
+    _collectionView.backgroundColor = [UIColor blackColor];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
     _collectionView.pagingEnabled = YES;
     [self.view addSubview:_collectionView];
+    [_collectionView scrollToItemAtIndexPath:_indexPath atScrollPosition:UICollectionViewScrollPositionRight animated:YES];
 }
-
-//-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
-//{
-//    return self.view;
-//}
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 1 ;
@@ -65,6 +59,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     PhotoCollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionViewCell" forIndexPath:indexPath];
+    cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
     cell.photoModel = self.albumModel.photoModels[indexPath.row];
     return cell;
 }
@@ -88,5 +83,4 @@
     [self dismissViewControllerAnimated:YES completion:^{
     }];
 }
-
 @end

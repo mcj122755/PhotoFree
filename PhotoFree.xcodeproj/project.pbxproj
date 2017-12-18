@@ -17,7 +17,6 @@
 		680BDF071FDFDA9000FE8331 /* AddPhotoAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 680BDF051FDFDA9000FE8331 /* AddPhotoAlbumViewController.m */; };
 		680BDF081FDFDA9000FE8331 /* AddPhotoAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 680BDF061FDFDA9000FE8331 /* AddPhotoAlbumViewController.xib */; };
 		680BDF0B1FDFDF3B00FE8331 /* MBProgressHUD+Tooltip.m in Sources */ = {isa = PBXBuildFile; fileRef = 680BDF0A1FDFDF3B00FE8331 /* MBProgressHUD+Tooltip.m */; };
-		6810529D1FE2267D0010447C /* ZoomFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6810529C1FE2267D0010447C /* ZoomFlowLayout.m */; };
 		685941ED1FE0BDFE00996C77 /* PhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 685941EC1FE0BDFD00996C77 /* PhotoModel.m */; };
 		685941F01FE0BF1B00996C77 /* AlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 685941EF1FE0BF1B00996C77 /* AlbumModel.m */; };
 		685941F31FE0C4ED00996C77 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 685941F21FE0C4ED00996C77 /* NSString+MD5.m */; };
@@ -83,8 +82,6 @@
 		680BDF061FDFDA9000FE8331 /* AddPhotoAlbumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPhotoAlbumViewController.xib; sourceTree = "<group>"; };
 		680BDF091FDFDF3B00FE8331 /* MBProgressHUD+Tooltip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Tooltip.h"; sourceTree = "<group>"; };
 		680BDF0A1FDFDF3B00FE8331 /* MBProgressHUD+Tooltip.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Tooltip.m"; sourceTree = "<group>"; };
-		6810529B1FE2267D0010447C /* ZoomFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoomFlowLayout.h; sourceTree = "<group>"; };
-		6810529C1FE2267D0010447C /* ZoomFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoomFlowLayout.m; sourceTree = "<group>"; };
 		685941EB1FE0BDFD00996C77 /* PhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoModel.h; sourceTree = "<group>"; };
 		685941EC1FE0BDFD00996C77 /* PhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoModel.m; sourceTree = "<group>"; };
 		685941EE1FE0BF1B00996C77 /* AlbumModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumModel.h; sourceTree = "<group>"; };
@@ -257,8 +254,6 @@
 				68DF00741FE0F5210054AFED /* PhotoCollectionViewCell.h */,
 				68DF00751FE0F5210054AFED /* PhotoCollectionViewCell.m */,
 				68DF00761FE0F5210054AFED /* PhotoCollectionViewCell.xib */,
-				6810529B1FE2267D0010447C /* ZoomFlowLayout.h */,
-				6810529C1FE2267D0010447C /* ZoomFlowLayout.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -498,7 +493,6 @@
 				68DF00771FE0F5210054AFED /* PhotoCollectionViewCell.m in Sources */,
 				68DF00B71FE100240054AFED /* NSBundle+ZLPhotoBrowser.m in Sources */,
 				685941F31FE0C4ED00996C77 /* NSString+MD5.m in Sources */,
-				6810529D1FE2267D0010447C /* ZoomFlowLayout.m in Sources */,
 				68DF00B41FE100240054AFED /* ZLOnePhoto.m in Sources */,
 				68DF00B61FE100240054AFED /* ZLProgressHUD.m in Sources */,
 				68DF00B31FE100240054AFED /* ZLPhotoBrowserCell.m in Sources */,

@@ -48,6 +48,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     PhotoCollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionViewCell" forIndexPath:indexPath];
+    cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
     cell.photoModel = self.albumModel.photoModels[indexPath.row];
     return cell;
 }
